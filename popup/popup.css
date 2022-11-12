@@ -3,25 +3,42 @@
 } */
 
 body {
-    margin: 5rem;
-    /* background: radial-gradient(#e66465, #9198e5, rgb(254, 156, 99)); */
-    background: radial-gradient(#e66465, #9198e5, black);
-    /* background: radial-gradient(#f48c9d, #69000e, black); */
+    background: none;
+    width: 320px;
+    height: 400px;
+    max-height: 606px;
+}
+
+.container {
+    height: 400px;
+    border-radius: 10px;
     
-    /* background: radial-gradient(black -10%, #69000e, #f48c9d); */
-    /* background: radial-gradient(410px at 49.5% 99%, rgb(197, 67, 31) 0%, rgb(255, 209, 255) 99.5%); */
-    background-size: 180% 180%;
-    animation: gradient 10s ease infinite;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    background: radial-gradient(#e66465, #9198e5);
+    background-size: cover;
+    background-size: 200% 200%;
+    animation: gradient 7s ease infinite;
+    
+    text-align: center;
+}
+
+
+
+.title {
+    text-align: center;
+    padding: 3rem;
+    font-family: 'luminari', fantasy;
+    color: #200c37;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 30%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 30%;
     }
 }
