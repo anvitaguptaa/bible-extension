@@ -1,12 +1,13 @@
 {
     "manifest_version": 3,
     "name": "Bible Extension",
-    "description": "For Katherine and Alicia. Group Bible in one extension.",
-    "version": "1.0",
+    "description": "For Katherine and Alicia. Group \"Bible\" quotes Chrome extension. Enjoy ;)",
+    "version": "0.0.0.1",
     "action": {
       "default_popup": "/popup/popup.html",
-      "default_icon": "/images/icon.png"
+      "default_icon": "/images/icons/icon.png"
     },
+    "icons" : { "32": "/images/icons/icon.png" },
     "content_scripts": [ {
       "matches": ["<all_urls>"],
       "js": ["/popup/popup.js"]

@@ -9,7 +9,8 @@ var quotes = {
                    "induce addiction onto your exes >:)"],
                    
     "Anvi" : ["You don't have to ask &#x1FAF3;",
-              "Once I learn how to punch myself in the face, it's over for men.", "Jail."]
+              "Once I learn how to punch myself in the face, it's over for men.", 
+              "Kanye energy. As he should."]
 }; 
 
 document.getElementById("generate-button").addEventListener("click", myFunction);
@@ -29,6 +30,20 @@ function getImageCharacter(name) {
     return image;
 }
 
+function getWidth(name) {
+    switch(name) {
+        case "Anvi":
+            width = "48px";
+            break;
+        case "Alicia":
+            width = "35px";
+            break;
+        case "Katherine":
+            width = "55px";
+            break;
+    }
+}
+
 function myFunction() {
     var name = names[Math.floor(Math.random() * names.length)];
     var quote = quotes[name][Math.floor(Math.random() * quotes[name].length)];
@@ -38,17 +53,7 @@ function myFunction() {
 
     let image = document.getElementById("character-img");
     image.src = src_image;
-
-    switch(name) {
-        case "Anvi":
-            image.style.width = "50px";
-            break;
-        case "Alicia":
-            image.style.width = "35px";
-            break;
-        case "Katherine":
-            image.style.width = "45px";
-            break;
-    }
+    image.style.width = getWidth(name);
+    
 }
 
