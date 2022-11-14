@@ -39,9 +39,10 @@ function getWidth(name) {
             width = "35px";
             break;
         case "Katherine":
-            width = "55px";
+            width = "43px";
             break;
     }
+    return width;
 }
 
 function myFunction() {
